@@ -29,7 +29,7 @@ export class ExamplePdfViewerComponent {
   public loadLargeFile(): void {
     this.http
       .get(
-        'https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf',
+        'https://f003.backblazeb2.com/file/umsystem-books/%2B%2B+004+Буров+Є.В.++Комп\'ютерні+мережі.pdf',
         { responseType: 'blob' }
       )
       .subscribe((res) => this.src = res);

@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+app-header {
+  order: 1;
+  height: 100px;
+  flex: 0 1 100%;
+}
+
+app-nav {
+  order: 2;
+  flex: 0 1 200px;
+}
+
+app-main,
+app-privacy-policy {
+  order: 3;
+  flex: 1;
+  height: calc(100vh - 100px);
+}
+app-main{
+  @apply p-4;
+}
+app-aside {
+  order: 4;
+  flex: 0 1 1rem;
+}
+
+@media (max-width: 768px) {
+  app-header,
+  app-nav,
+  app-main,
+  app-aside {
+    flex: unset;
+    width: 100%;
+  }
+}
+.form-field{
+  @apply w-full;
+}

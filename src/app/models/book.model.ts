@@ -1,6 +1,9 @@
-interface CategoryModel{
+export interface BookModel{
     id: string;
-    name: string;
+    cover: string;
+    author: string;
+    title: string;
     description: string;
-    parentId: string;
+    annotation: string;
+    bookmarks: string[];
 }

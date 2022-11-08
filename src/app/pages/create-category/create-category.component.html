@@ -1,0 +1,25 @@
+<form [formGroup]="form" (submit)="onSubmit()">
+  <mat-form-field class="form-field" appearance="outline">
+    <mat-label>
+      Назва
+    </mat-label>
+    <input matInput formControlName="name" required>
+    <mat-error *ngIf="!form.controls['name'].valid && form.controls['name'].touched">
+      {{ getErrorMessage('name') }}
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field class="form-field" appearance="outline">
+    <mat-label>
+      Скорочена назва
+    </mat-label>
+    <input matInput formControlName="shortName" required>
+    <mat-error *ngIf="!form.controls['shortName'].valid && form.controls['shortName'].touched">
+      {{ getErrorMessage('shortName') }}
+    </mat-error>
+  </mat-form-field>
+  <div class="flex items-center justify-center">
+  <button mat-raised-button color="primary" class="w-2/6" type="submit">
+    Зберегти
+  </button>
+  </div>
+</form>

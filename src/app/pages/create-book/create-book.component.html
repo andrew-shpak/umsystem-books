@@ -1,0 +1,16 @@
+<form [formGroup]="form" (submit)="onSubmit()">
+  <mat-form-field class="form-field" appearance="outline">
+    <mat-label>
+      Назва
+    </mat-label>
+    <input matInput formControlName="name" required>
+    <mat-error *ngIf="!form.controls['title'].valid && form.controls['title'].touched">
+      {{ getErrorMessage('title') }}
+    </mat-error>
+  </mat-form-field>
+  <div class="flex items-center justify-center">
+    <button mat-raised-button color="primary" class="w-2/6" type="submit">
+      Зберегти
+    </button>
+  </div>
+</form>

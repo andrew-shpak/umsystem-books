@@ -1,0 +1,17 @@
+.vscode/
+.DS_Store
+node_modules/
+
+/.cache
+/.angular
+/.vscode
+/.idea
+/.vs
+/build
+/server-build
+/public/build
+/coverage
+
+package.json
+pnpm-lock.yaml
+

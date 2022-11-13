@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 app-header {
   order: 1;
   height: 100px;
@@ -20,7 +19,7 @@ app-privacy-policy {
   flex: 1;
   height: calc(100vh - 100px);
 }
-app-main{
+app-main {
   @apply p-4;
 }
 app-aside {
@@ -37,6 +36,6 @@ app-aside {
     width: 100%;
   }
 }
-.form-field{
+.form-field {
   @apply w-full;
 }

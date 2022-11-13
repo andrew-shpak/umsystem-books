@@ -1,6 +1,6 @@
-export interface CategoryModel{
-    id: string;
-    name: string;
-    description: string;
-    parentId: string;
+export interface CategoryModel {
+  id: string
+  name: string
+  description: string
+  parentId: string
 }

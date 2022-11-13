@@ -21,7 +21,8 @@ import {BookComponent} from './pages/book/book.component'
 import {ExamplePdfViewerComponent} from './example-pdf-viewer/example-pdf-viewer.component'
 import {NgxExtendedPdfViewerModule} from 'ngx-extended-pdf-viewer'
 import {CreateBookComponent} from './pages/create-book/create-book.component'
-import {MatPaginatorModule} from '@angular/material/paginator'
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { LoginComponent } from './pages/login/login.component'
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import {MatPaginatorModule} from '@angular/material/paginator'
     BookComponent,
     ExamplePdfViewerComponent,
     CreateBookComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import {PrivacyPolicyComponent} from './pages/privacy-policy/privacy-policy.comp
 import {BooksComponent} from './pages/books/books.component'
 import {BookComponent} from './pages/book/book.component'
 import {CreateBookComponent} from './pages/create-book/create-book.component'
+import { LoginComponent } from './pages/login/login.component'
 
 let routes: Routes
 routes = [
@@ -18,6 +19,7 @@ routes = [
   {path: 'books', component: BooksComponent},
   {path: 'books/create', component: CreateBookComponent},
   {path: 'book/:id', component: BookComponent},
+  {path: 'login', component: LoginComponent},
 ]
 
 @NgModule({

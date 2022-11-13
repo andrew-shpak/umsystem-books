@@ -1,0 +1,27 @@
+<div class="flex-row items-center flex">
+  <div class="w-full" aria-live="polite">
+    <h1>Supabase + Angular</h1>
+    <p >Sign in via magic link with your email below</p>
+    <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+      <mat-form-field class="form-field w-full" appearance="outline">
+        <mat-label>
+          Пошта
+        </mat-label>
+        <input matInput formControlName="email" required>
+        <mat-error *ngIf="!signInForm.controls['email'].valid && signInForm.controls['email'].touched">
+          {{ getErrorMessage('email') }}
+        </mat-error>
+      </mat-form-field>
+      <div class="flex items-center gap-4 justify-center">
+        <button
+          type="submit"
+          mat-raised-button
+          color="primary"
+          [disabled]="loading"
+        >
+          {{ loading ? 'Loading' : 'Send magic link' }}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
